@@ -50,9 +50,12 @@
                 <th scope="row"><?= __('Published') ?></th>
                 <td><?= $article->published ? __('Yes') : __('No'); ?></td>
             </tr>
+            <tr>
+                <th scope="row"><?= __('Body') ?></th>
+                <td><?= $this->Text->autoParagraph(h($article->body)); ?></td>
+            </tr>
         </table>
     </div>
-    <div class="row">
     <div class="related">
         <h4><?= __('Related Tags') ?></h4>
         <?php if (!empty($article->tags)): ?>
