@@ -53,9 +53,6 @@
         </table>
     </div>
     <div class="row">
-        <h4><?= __('Body') ?></h4>
-        <?= $this->Text->autoParagraph(h($article->body)); ?>
-    </div>
     <div class="related">
         <h4><?= __('Related Tags') ?></h4>
         <?php if (!empty($article->tags)): ?>
