@@ -17,6 +17,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use cake\Event\EventInterface;
 
 /**
  * Application Controller
@@ -49,5 +50,18 @@ class AppController extends Controller
          * see https://book.cakephp.org/4/en/controllers/components/form-protection.html
          */
         //$this->loadComponent('FormProtection');
+    }
+
+    public function beforeFilter(EventInterface $event)
+    {
+//        $this->viewBuilder()->setLayout('default');
+
+        $this->loadModel('Menus');
+
+        $menus = $this->Menus->find('all',['contain'=>['Submenus']]);
+
+        $this->set('menus', $menus);
+        // debug($event);
+        // exit;
     }
 }

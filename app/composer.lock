@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0448fb81a6bb245db4cd10653e11b0c",
+    "content-hash": "2600d742aed85554acd1c574243821f4",
     "packages": [
         {
             "name": "cakephp/cakephp",
@@ -355,6 +355,62 @@
             "time": "2021-10-28T20:44:15+00:00"
         },
         {
+            "name": "friendsofcake/bootstrap-ui",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/bootstrap-ui.git",
+                "reference": "7dcf72868bfab8a0ca8f68d5e291b62f0db845fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/7dcf72868bfab8a0ca8f68d5e291b62f0db845fa",
+                "reference": "7dcf72868bfab8a0ca8f68d5e291b62f0db845fa",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^4.0"
+            },
+            "require-dev": {
+                "cakephp/bake": "^2.1",
+                "cakephp/cakephp-codesniffer": "^4.1",
+                "phpunit/phpunit": "~8.5.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BootstrapUI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
+                }
+            ],
+            "description": "Bootstrap front-end framework support for CakePHP",
+            "homepage": "http://github.com/friendsofcake/bootstrap-ui",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "front-end"
+            ],
+            "support": {
+                "issues": "http://github.com/friendsofcake/bootstrap-ui/issues",
+                "source": "http://github.com/friendsofcake/bootstrap-ui"
+            },
+            "time": "2021-06-11T15:17:19+00:00"
+        },
+        {
             "name": "laminas/laminas-diactoros",
             "version": "2.8.0",
             "source": {
@@ -588,21 +644,21 @@
         },
         {
             "name": "league/container",
-            "version": "4.2.0",
+            "version": "4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/container.git",
-                "reference": "375d13cb828649599ef5d48a339c4af7a26cd0ab"
+                "reference": "82a57588c630663d2600f046753b23ab6dcda9b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/container/zipball/375d13cb828649599ef5d48a339c4af7a26cd0ab",
-                "reference": "375d13cb828649599ef5d48a339c4af7a26cd0ab",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/82a57588c630663d2600f046753b23ab6dcda9b5",
+                "reference": "82a57588c630663d2600f046753b23ab6dcda9b5",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "psr/container": "^1.1 || ^2.0"
+                "psr/container": "^2.0.0"
             },
             "provide": {
                 "psr/container-implementation": "^1.0"
@@ -658,7 +714,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/container/issues",
-                "source": "https://github.com/thephpleague/container/tree/4.2.0"
+                "source": "https://github.com/thephpleague/container/tree/4.1.2"
             },
             "funding": [
                 {
@@ -666,7 +722,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-16T10:29:06+00:00"
+            "time": "2021-07-26T07:04:36+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
