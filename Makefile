@@ -1,4 +1,4 @@
-SHELL 			:= /bin/zsh # set shell based on host os, use /bin/zsh for mac
+SHELL 			:= /usr/local/bin/fish # set shell based on host os, use /bin/zsh for mac
 .DEFAULT_GOAL   := help
 
 #
