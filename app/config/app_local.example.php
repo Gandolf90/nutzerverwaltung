@@ -16,6 +16,7 @@ return [
      * true: Errors and warnings shown.
      */
     'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
+    'App.title' => 'Projekt Bauteam',// title in application
 
     /*
      * Security and encryption configuration
@@ -25,7 +26,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT', '__SALT__'),
+        'salt' => env('SECURITY_SALT', 'a403540180afad630bb791099ded0c254a165dc0d6beec03a8d941987a87d6c5'),
     ],
 
     /*
